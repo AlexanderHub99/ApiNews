@@ -24,7 +24,7 @@ public class NewsController : ControllerBase
             .ToListAsync();
     }
 
-    // GET api/<NewsController>/5
+    // GET api/<NewsController>/Substring
     [HttpGet("{string}")]
     public Task<ActionResult<News>> SubstringGetNews(string @string)
     {
@@ -107,7 +107,7 @@ public class NewsController : ControllerBase
             return NotFound();
         }
 
-        _context.News.Remove(todoItem);
+        _context.News.RemoveRange(todoItem);
         await _context.SaveChangesAsync();
 
         return NoContent();
