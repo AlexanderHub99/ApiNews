@@ -41,7 +41,7 @@ connect https://localhost:7073/api/News/ID-НОВОСТИ КОТОРУЮ ХОТ�
 ```html 
 put -h Content-Type=application/json -c "{"id": id-НОВОСТИ,"title": "Изменил","description":"Изменил","link":"Изменил","lastBuildDate":"Изменил"}" 
 ```
-#### Дял удаления:
+#### Для удаления:
 ```html 
 connect https://localhost:7073/api/News/ID--НОВОСТИ КОТОРУЮ ХОТИТЕ УДАЛИТЬ.
 ``` 
